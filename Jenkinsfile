@@ -146,6 +146,26 @@ pipeline{
                 
             }
         }
+		
+		
+		stage("Dynamic"){
+				 when{
+						branch "feature/multi*"
+							
+						}
+				steps{
+					
+				
+					echo("This is Dynamic stage")
+				
+		
+				}
+		
+		
+		
+		
+		
+		}
         
     }
     
