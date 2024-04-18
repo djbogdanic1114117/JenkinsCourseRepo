@@ -149,9 +149,14 @@ pipeline{
 		
 		
 		stage("Dynamic"){
-		
+				 when{
+							equals branch: feature/multi,
+							actual: "${params.GIT_BRANCH}"
+						}
 				steps{
-						echo("This is Dynamic stage")
+					
+				
+					echo("This is Dynamic stage")
 				
 		
 				}
