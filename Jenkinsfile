@@ -146,6 +146,21 @@ pipeline{
                 
             }
         }
+		
+		
+		stage("Dynamic"){
+		
+				steps{
+						echo("This is Dynamic stage")
+				
+		
+				}
+		
+		
+		
+		
+		
+		}
         
     }
     
