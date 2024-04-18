@@ -150,8 +150,8 @@ pipeline{
 		
 		stage("Dynamic"){
 				 when{
-							equals branch: feature/multi,
-							actual: "${params.GIT_BRANCH}"
+						branch "feature/multi*"
+							
 						}
 				steps{
 					
